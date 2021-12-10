@@ -1,0 +1,122 @@
+main{
+    min-height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    justify-content: center;
+    background-color: hsl(205, 20%, 88%);
+}
+.container{
+    width: 620px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+h2{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+.underline{
+    height: 4px;
+    width: 80px;
+    background-color: hsl( 205, 78%, 60%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.review{
+    border-radius: 4px;
+    padding: 24px 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0,0, 0, 0.5);
+}
+.title{
+    margin-bottom: 64px;
+}
+.img-container{
+    height: 150px;
+    width: 150px;
+    /* background-image: url(https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg); */
+    /* background-size: 150px; */
+    /* background-repeat: no-repeat; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
+    position: relative;
+}
+#anh{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+.img-container::before{
+    content: "";
+    height: 150px;
+    width: 150px;
+    background-color: rgb(121, 121, 216);
+    top: -0.25rem;
+    right: -0.5rem;
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    z-index: 1;
+}
+h4{
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+#job{
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: hsl( 205, 78%, 60%);
+    font-size: 0.85rem;
+    text-align: center;
+}
+#info{
+    margin-bottom: 0.75rem;
+    color: hsl( 210, 22%, 49%);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 100px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.button-container button{
+    border: 0 solid white;
+    background-color: white;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 4px 5px;
+    color: hsl( 205, 90%, 76%);
+}
+.button-container button:hover{
+    color: hsl( 205, 78%, 60%);
+    cursor: pointer;
+}
+.random-btn{
+    margin-top: 0.5rem;
+    background-color: hsl( 205, 100%, 96%);
+    color: hsl( 205, 78%, 60%);
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100px;
+    height: 24px;
+    border: 1px solid rgb(201, 168, 168);
+    border-radius: 4px;
+}
